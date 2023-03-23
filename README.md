@@ -3,6 +3,9 @@ this is a basic and responsive store website which you can use to develop your o
 you might run onto some mistakes here and there with the css designing but I hope that this code will help you out to build your own site.
 
 This webiste contains three pages:
+<br>
 mainPage.html
+<br>
 shopPage.html
+<br>
 productInfo.html
