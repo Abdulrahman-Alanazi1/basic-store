@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="shopPage.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/regular.min.css">
+
+</head>
+<body id="shopBody">
+
+    <header class="main-header">
+        <div class="main-header-div">
+            <nav class="header-first-nav web-list">
+                <ul>
+                    <li>
+                        <a href="#">Find Stores</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign in</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="header-second-nav">
+
+                <div class="brand-icon">
+                    <img src="imgs/storeLogo.png" alt="icon">
+                </div>
+
+                <div class="header-second-nav-list">
+                    <ul>
+                        <li>
+                            <a href="#">New & Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Men</a>
+                        </li>
+                        <li>
+                            <a href="#">Kids</a>
+                        </li>
+                        <li>
+                            <a href="#">Women</a>
+                        </li>
+                    </ul>
+                    <div class="mobile-list">
+                        <ul>
+                            <li>
+                                
+                                <a href="#">
+                                    <i class="fa fa-map-pin fa-lg" aria-hidden="true"
+                                    style="color: black;"> 
+                                    <span>
+                                     Find Stores 
+                                    </span>
+                                    </i>
+                                    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-question-circle fa-lg" aria-hidden="true"
+                                    style="color: black;
+                                    ">
+                                    <span>
+                                    Help
+                                    </span>
+                                    </i>
+                                    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+
+                                    <i class="fa fa-info-circle fa-lg" aria-hidden="true"
+                                    style="color: black;
+                                    ">
+                                    <span>
+                                        About Us
+                                    </span>
+                                    </i>
+                                    
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-sign-in fa-lg" aria-hidden="true"
+                                     style="
+                                    color: black;
+                                    ">
+                                    <span>
+                                        Sign in
+                                    </span>
+                                    </i>
+                                    
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="header-search-toggle-container">
+                    <div class="header-icons"
+                    style="margin-right: 10px;">
+
+                        <a href="#">
+                            <i class="fa-regular fa-heart"
+                            style="
+                            color: black;
+                            font-size: 5vmin;
+                            padding-right: 10px;
+                            "></i>
+                        </a>
+                        <a href="#">
+
+                            <i class="fa fa-cart-shopping" aria-hidden="true"
+                            style="
+                            color: black;
+                            font-size: 5vmin;
+                            ">
+
+                            </i>
+                            
+                        </a>
+                    </div>
+                    <form class="searchBox" action="#">
+                        <input type="text" class="searchInput" placeholder="Search">
+                        <button class="searchButton">
+                            <a href="#">
+                                <i class="fa fa-search">
+                                </i>
+                            </a>
+                        </button>
+                    </form>
+                   
+                    <a href="#" class="toggle-button">
+                        <span class="bar bar-num1"></span>
+                        <span class="bar bar-num2"></span>
+                        <span class="bar bar-num3"></span>
+                    </a>
+                </div>      
+            </nav>
+        </div>  
+    </header>
+   
+
+    <section class="main-section" >
+        <header class="main-section-header " >
+
+            <h1 id="main-section-title">Store's Clothing
+                <label id="main-title-count"> (100)</label>
+            </h1>
+            <div class="filter-div">
+
+                <div class="drop-down">
+
+                    <i class="fa fa-sort-alpha-asc dropbtn " style="color: black;" onclick="dropDown()">
+                        <label class="dropbtn">
+                            Sort By
+                        </label>
+                    </i>
+                    <div id="myDropdown" class="dropdown-content">
+
+                        <a href="#">Featured</a>
+                        <a href="#">Newest</a>
+                        <a href="#">Price: High-Low</a>
+                        <a href="#">Price: Low-High</a>
+                    </div>
+
+
+                </div>
+
+                <i id="hideAside" class="fa fa-list hidebtn" style="color: black;" onclick="hideAside()">
+                    <label id="showOrHideAside" class="hidebtn">
+                        Show Filter
+                    </label>
+                </i>
+
+                <i onclick="showBottomSheet()" id="mobile-filter" class="fa fa-list-check mobile-filter" style="color: black;">
+
+                    <label for="">
+                        Filter
+                    </label>
+                </i>
+                
+            </div>
+        </header>
+
+       
+    </section>
+
+    <main class="main-contents" >
+
+        <aside id="main-section-aside" class="main-section-aside">
+
+            <ul style="padding-left: 2rem;">
+                <li>
+                    <a href="#">
+                        Shoes
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Football kits
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Tops & T-Shirts
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Tracksuits
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Jackets
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Hoodies & Sweatshirts
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Worldcup Jerseys 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Socks
+                    </a>
+                </li>
+            </ul>
+            <div class="gender-group  collapsing-group" id="gender-div" onclick="collapsingDiv()">
+                <div class="label-div">
+                    <label id="gender-label collapsing-label" for="#">Gender</label>
+                    <i class="fa fa-arrow-down" style="color: black;"></i>
+                </div>
+                <div class="gender-selection">
+
+                    <div class="gender-checkboxes collapsing-div" id="gender-checkboxes">
+                        <ul style="padding-left: 2rem;">
+                            <li>
+                                <label for="checkbox-men">
+                                    <input id="checkbox-men" type="checkbox" class="checkbox"> 
+                                    Men
+                                </label>
+
+                            </li>
+                            <li>
+                                <label for="checkbox-women">
+                                    <input id="checkbox-women" type="checkbox" class="checkbox"> 
+                                    Women
+                                </label>
+
+                            </li>
+                            <li>
+                                <label for="checkbox-unisex">
+                                    <input id="checkbox-unisex" type="checkbox" class="checkbox"> 
+                                    Unisex
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="condition-group collapsing-group" id="condition-div" onclick="collapsingDiv()">
+                <div class="label-div">
+                    <label id="condition-label collapsing-label" for="#">Best For</label>
+                    <i class="fa fa-arrow-down" style="color: black;"></i>
+                </div>
+                <div class="condition-selection">
+
+                    <div class="condition-checkboxes collapsing-div" id="condition-checkboxes">
+                        <ul style="padding-left: 2rem;">
+                            <li>
+                                <label for="checkbox-cold-weather">
+                                    <input id="checkbox-cold-weather" type="checkbox" class="checkbox"> 
+                                    Cold Weather
+                                </label>
+
+                            </li>
+                            <li>
+                                <label for="checkbox-warm-weather">
+                                    <input id="checkbox-warm-weather" type="checkbox" class="checkbox"> 
+                                    Warm Weather    
+                                </label>
+
+                            </li>
+                            <li>
+                                <label for="checkbox-hot-weather">
+                                    <input id="checkbox-hot-weather" type="checkbox" class="checkbox"> 
+                                    Hot Weather
+                                </label>
+                            </li>
+                            <li>
+                                <label for="checkbox-wet-weather">
+                                    <input id="checkbox-wet-weather" type="checkbox" class="checkbox"> 
+                                    Wet Weather
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="color-group collapsing-group" id="color-palette">
+                <div class="label-div">
+                    <label id="color-label collapsing-label" for="#">Color</label>
+                    <i class="fa fa-arrow-down" style="color: black;"></i>
+                </div>
+                <div class="color-selection">
+                    <div class="color-div collapsing-div" id="color-list-palette">
+                        <ul>
+                            <li>
+                                <div style="background: red;">
+                                   
+                                </div>
+                                <span>
+                                    Red
+                                </span>
+                            </li>
+                            <li>
+                                <div style="background: blue;">
+                                    
+                                </div>
+                                <span>
+                                    Blue
+                                </span>
+                            </li>
+                            <li>
+                                <div style="background: black;">
+                                    
+                                </div>
+                                <span>
+                                    Black
+                                </span>
+                            </li>
+                            <li>
+                                <div style="background: pink;">
+                                    
+                                </div>
+                                <span>
+                                    Pink
+                                </span>
+                            </li>
+                            <li>
+                                <div style="background: darkmagenta;">
+                                    
+                                </div>
+                                <span>
+                                    Darkpink
+                                </span>
+                            </li>
+                            <li>
+                                <div style="background-image: linear-gradient(red,black, blue);">
+                                   
+                                </div>
+                                <span>
+                                    mixed
+                                </span>
+                            </li>
+                        </ul>            
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <section id="main-section-body" class="main-section-body">
+
+            <!-- this is where the cards are (look for its function in shopPage.js 
+                -- line 280 (function listView)) -->
+
+            <div id="first-card-container" class="first-card-container">
+            </div>
+
+
+
+        </section>
+    </main>
+    
+    <!-- this is the bottom sheet for mobile screens -->
+    <section class="bottom-sheet">
+
+        <div onclick="hideBottomSheet()" id="bottomSheetContainer">
+            <div class="bottom-sheet-button">
+
+                <button onclick="hideBottomSheet()">X</button>
+            </div>
+
+            <div id="bottom-sheet-content" class="bottom-sheet-content">
+                <div class="mobile-filter-container">
+                    <div class="mobile-item-list">
+                        <ul class="mobile-first-ul" style="border-bottom: 1px dotted black;">
+                            <div class="label-div">
+                                <label id="" for="#">Filter</label>
+                            </div>
+                            <li>
+                                <a href="#">
+                                    Shoes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Football kits
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Tops & T-Shirts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Tracksuits
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Jackets
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Hoodies & Sweatshirts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Worldcup Jerseys 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Socks
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        <ul class="mobile-second-ul" style="border-bottom: 1px dotted black;">
+                            <div class="label-div">
+                                <label id="" for="#">Gender</label>
+                            </div>
+                            <li>
+                                <label for="checkbox-men1">
+                                    <input id="checkbox-men1" type="checkbox" class="checkbox"> 
+                                    Men
+                                </label>
+                            </li>
+                            <li>
+                                <label for="checkbox-women1">
+                                    <input id="checkbox-women1" type="checkbox" class="checkbox"> 
+                                    Women
+                                </label>
+                            </li>
+                            <li>
+                                <label for="checkbox-unisex1" >
+                                    <input id="checkbox-unisex1" type="checkbox" class="checkbox"> 
+                                    Unisex
+                                </label>
+                            </li>
+                        </ul>
+
+                        <ul class="mobile-third-ul"  style="border-bottom: 1px dotted black;">
+                            <div class="label-div">
+                                <label id="" for="#">Best For</label>
+                            </div>
+                            <li>
+                                <label for="checkbox-cold-weather1">
+                                    <input id="checkbox-cold-weather1" type="checkbox" class="checkbox"> 
+                                    Cold Weather
+                                </label>
+
+                            </li>
+                            <li>
+                                <label for="checkbox-warm-weather1">
+                                    <input id="checkbox-warm-weather1" type="checkbox" class="checkbox"> 
+                                    Warm Weather    
+                                </label>
+
+                            </li>
+                            <li>
+                                <label for="checkbox-hot-weather1">
+                                    <input id="checkbox-hot-weather1" type="checkbox" class="checkbox"> 
+                                    Hot Weather
+                                </label>
+                            </li>
+                            <li>
+                                <label for="checkbox-wet-weather1">
+                                    <input id="checkbox-wet-weather1" type="checkbox" class="checkbox"> 
+                                    Wet Weather
+                                </label>
+                            </li>
+                        </ul>
+                        <div class="color-div-mobile">
+
+                            <div class="label-div">
+                                <label id="" for="#">Colors</label>
+                            </div>
+                            <ul class="mobile-fourth-ul">
+                                <li>
+                                    <div style="background: red;">
+                                       
+                                    </div>
+                                    <span>
+                                        Red
+                                    </span>
+                                </li>
+                                <li>
+                                    <div style="background: blue;">
+                                        
+                                    </div>
+                                    <span>
+                                        Blue
+                                    </span>
+                                </li>
+                                <li>
+                                    <div style="background: black;">
+                                        
+                                    </div>
+                                    <span>
+                                        Black
+                                    </span>
+                                </li>
+                                <li>
+                                    <div style="background: pink;">
+                                        
+                                    </div>
+                                    <span>
+                                        Pink
+                                    </span>
+                                </li>
+                                <li>
+                                    <div style="background: darkmagenta;">
+                                        
+                                    </div>
+                                    <span>
+                                        Darkpink
+                                    </span>
+                                </li>
+                                <li>
+                                    <div style="background-image: linear-gradient(red,black, blue);">
+                                       
+                                    </div>
+                                    <span>
+                                        mixed
+                                    </span>
+                                </li>
+                            </ul>                       
+                        </div>              
+                    </div>             
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<script src="shopPage.js"></script>
+
+
+</html>

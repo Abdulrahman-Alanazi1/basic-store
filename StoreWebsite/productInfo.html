@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Info</title>
+
+    <link rel="stylesheet" href="productInfo.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-div">
+            <nav class="header-first-nav web-list">
+                <ul>
+                    <li>
+                        <a href="#">Find Stores</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign in</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="header-second-nav">
+
+                <div class="brand-icon">
+                    <img src="imgs/storeLogo.png" alt="icon">
+                </div>
+
+                <div class="header-second-nav-list">
+                    <ul>
+                        <li>
+                            <a href="#">New & Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Men</a>
+                        </li>
+                        <li>
+                            <a href="#">Kids</a>
+                        </li>
+                        <li>
+                            <a href="#">Women</a>
+                        </li>
+                    </ul>
+                    <div class="mobile-list">
+                        <ul>
+                            <li>
+                                
+                                <a href="#">
+                                    <i class="fa fa-map-pin fa-lg" aria-hidden="true"
+                                    style="color: black;"> 
+                                    <span>
+                                     Find Stores 
+                                    </span>
+                                    </i>
+                                    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-question-circle fa-lg" aria-hidden="true"
+                                    style="color: black;
+                                    ">
+                                    <span>
+                                    Help
+                                    </span>
+                                    </i>
+                                    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+
+                                    <i class="fa fa-info-circle fa-lg" aria-hidden="true"
+                                    style="color: black;
+                                    ">
+                                    <span>
+                                        About Us
+                                    </span>
+                                    </i>
+                                    
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-sign-in fa-lg" aria-hidden="true"
+                                     style="
+                                    color: black;
+                                    ">
+                                    <span>
+                                        Sign in
+                                    </span>
+                                    </i>
+                                    
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="header-search-toggle-container">
+                    <div class="header-icons"
+                    style="margin-right: 10px;">
+
+                        <a href="#">
+                            <i class="fa-regular fa-heart"
+                            style="
+                            color: black;
+                            font-size: 5vmin;
+                            padding-right: 10px;
+                            "></i>
+                        </a>
+                        <a href="#">
+
+                            <i class="fa fa-cart-shopping" aria-hidden="true"
+                            style="
+                            color: black;
+                            font-size: 5vmin;
+                            ">
+
+                            </i>
+                            
+                        </a>
+                    </div>
+                    <form class="searchBox" action="#">
+                        <input type="text" class="searchInput" placeholder="Search">
+                        <button class="searchButton">
+                            <a href="#">
+                                <i class="fa fa-search">
+                                </i>
+                            </a>
+                        </button>
+                    </form>
+                   
+                    <a href="#" class="toggle-button">
+                        <span class="bar bar-num1"></span>
+                        <span class="bar bar-num2"></span>
+                        <span class="bar bar-num3"></span>
+                    </a>
+                </div>      
+            </nav>
+        </div>  
+    </header>
+    <section class="main-section" >
+        <div class="main-section-img">
+            <img id="img" src="https://i.pinimg.com/564x/2e/e1/25/2ee125c44f55f9ba271eed224a410d33.jpg" alt="" srcset="">
+            <div>
+                <img src="imgs/storeLogo.png" alt="">
+                <img src="imgs/storeLogo.png" alt="">
+                <img src="imgs/storeLogo.png" alt="">
+                <img src="imgs/storeLogo.png" alt="">
+
+            </div>
+        </div>
+        <div class="main-section-content">
+            <h2 id="prod-title">
+            </h2>
+            <hr style=" width: 20%; margin-top: 10px; margin-bottom: 5px; height: 4px; background-color: cadetblue; border-radius: 10px;">
+
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star" style="color: black;"></span>
+            <span style="margin-left: 5px;">4/5</span>
+
+            <div class="price-div" style="display: flex; margin-top: 10px;">
+                <h5 class="oldPriceTag">Old Price:</h5>
+                <h5 class="oldPriceTag" id="old-price" style=" margin-left: 10px; color: red; text-decoration: line-through;"></h5>
+            </div>
+            <div style="display: flex; margin-top: 10px;">
+                <h5 id="newPrice"></h5>
+                <h5 id="new-price" style=" margin-left: 10px;"> 199 $</h5>
+            </div>
+            <div class="item-disc">
+                <span id="category"> Category</span>
+                <h3> About this item:</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequuntur animi aliquam eligendi accusantium doloremque esse velit sint. Totam magnam quisquam commodi illum alias minus. Eveniet iste ab veritatis consectetur.
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, natus assumenda! Nulla dolorum, commodi deleniti est iusto ducimus a sunt, dolor eius repellendus sapiente, quis minus! Repudiandae numquam quidem?
+                </p>
+            </div>
+            
+            <div style="display: flex; margin-top: 10px;">
+                <label>Color:</label>
+                <label style=" margin-left: 10px; color: blue;"> Blue</label>
+            </div>
+            <div style="display: flex; margin-top: 10px;">
+                <label>Available:</label>
+                <label style=" margin-left: 10px; color: green;"> in stock</label>
+            </div>
+            <div style="display: flex; margin-top: 10px;">
+                <label>Shipping Area:</label>
+                <label style=" margin-left: 10px;"> All around the world</label>
+            </div>
+            <div style="display: flex; margin-top: 10px;">
+                <label>Shipping Fee:</label>
+                <label style=" margin-left: 10px;"> Free</label>
+            </div>
+            <div class="content-buttons">
+                <button class="cart-button"> Add To Cart</button>
+                <button class="buy-button"> Buy Now</button>
+            </div>
+
+            <div class="share-item" style="display: flex; padding: 1rem;">
+                <span>Share This On:</span>
+                <div>
+                    <a href="http://www.twitter.com/novelist007" target="_blank">
+    
+                        <i class=" fa-brands fa-square-twitter" style=" color: black; font-size: x-large;" title="http://www.twitter.com/novelist007"></i>
+                    </a>
+                    <a href="http://www.twitter.com/novelist007" target="_blank">
+                        
+                        <i class=" fa-brands fa-square-facebook" style="color: black; font-size: x-large;" title ="http://www.twitter.com/novelist007"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abdulrahman1alanazi/" target="_blank">
+    
+                        <i class=" fa-brands fa-linkedin" style="color: black; font-size: x-large;" title="https://www.linkedin.com/in/abdulrahman1alanazi/"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@relaxationSounds007/videos" target="_blank">
+    
+                        <i class=" fa-brands fa-square-youtube" style="color: black; font-size: x-large;" title="https://www.youtube.com/@relaxationSounds007/videos"></i>
+                    </a>
+    
+                    <a href="https://github.com/Abdulrahman-Alanazi1" target="_blank">
+    
+                        <i class=" fa-brands fa-square-github" style="color: black; font-size: x-large;" title="https://github.com/Abdulrahman-Alanazi1"></i>
+                    </a>
+                    <a href="*">
+    
+                        <i class=" fa-brands fa-square-instagram" style="color: black; font-size: x-large;" title="Instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="productInfo.js"></script>
+</body>
+</html>
